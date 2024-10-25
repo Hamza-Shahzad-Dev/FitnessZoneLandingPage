@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            /* CSS Reset:  */
+            margin: 0;
+            padding: 0;
+            color: rgb(243, 164, 135); /*The main color of the text.*/
+            font-family: "Exo 2", sans-serif;
+        }
+
+        body {
+            background: url("Images/Bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 0px;
+        }
+
+        .left img {
+            width: 90px;
+            /* filter: invert(100%); */
+            display: block;
+            margin: auto;
+        }
+
+        .left h3 {
+            font-size: 22px;
+            line-height: 1;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .mid {
+            /* border: 2px solid white; */
+            display: block;
+            width: 35%;
+            margin: 0px auto;
+            overflow: auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            padding: 25px 25px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            color: rgb(252, 123, 77); /*Hovering color for the text.*/
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            background-color: black;
+            border: 2px solid rgb(78, 73, 73);
+            outline: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            color: rgb(252, 123, 77);
+        }
+
+        .container {
+            /* border: 2px solid green; */
+            display: inline-block;
+            min-height: 500px;
+            width: 600px;
+            position: absolute;
+            top: 280px;
+            left: 120px;
+            color: black;
+        }
+
+        .container h1 {
+            text-align: center;
+            margin: 2px 0px;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .container .formGroup {
+            /* border: 2px solid purple; */
+            display: block;
+            min-height: 400px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .container .formGroup input {
+            background-color: white;
+            border: 1px solid black;
+            display: block;
+            width: 85%;
+            margin: 15px auto;
+            padding: 15px 25px;
+            font-size: 20px;
+            text-align: center;
+            outline: none;
+            color: black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .container .formGroup input::placeholder {
+            color: black;
+        }
+
+        .container .formGroup #formButton {
+            width: 60%;
+            display: block;
+            margin: 2px auto;
+            padding: 15px 25px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <div class="left">
+            <img src="Images/Logo.jpg" alt="Logo">
+            <h3>Fitness Zone</h3>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us Now</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join The Fitness Zone</h1>
+        <form action="#" class="formGroup">
+            <input type="text" name="myName" id="myName" placeholder="Enter your name.">
+            <input type="text" name="myGender" id="myGender" placeholder="Enter your gender.">
+            <input type="text" name="myAge" id="myAge" placeholder="Enter your age.">
+            <input type="text" name="myBodytype" id="myBodytype" placeholder="Enter your bodytype.">
+            <input type="text" name="myContact" id="myContact" placeholder="Enter your contact number.">
+            <button class="btn" id="formButton">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
